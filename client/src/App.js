@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const [data, setData] = useState({})
   useEffect(() => {
-    fetch('http://localhost:5000/api')
+    fetch('/api')
       .then(response => response.json())
       .then(data => setData({
         name: data.name,
