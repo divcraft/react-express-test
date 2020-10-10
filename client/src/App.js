@@ -12,6 +12,7 @@ function App() {
       }))
   }, [])
   const { name, surname } = data
+  console.log(data)
   return (
     <div className="App">
       <header className="App-header">
