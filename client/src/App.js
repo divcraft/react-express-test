@@ -10,6 +10,7 @@ function App() {
         name: data.name,
         surname: data.surname
       }))
+      .catch(err => console.log(err))
   }, [])
   const { name, surname } = data
   console.log(data)
