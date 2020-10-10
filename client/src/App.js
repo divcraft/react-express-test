@@ -11,10 +11,11 @@ function App() {
         surname: data.surname
       }))
   }, [])
+  const { name, surname } = data
   return (
     <div className="App">
       <header className="App-header">
-        {data.name} {data.surname}
+        {name} {surname}
       </header>
     </div>
   );
