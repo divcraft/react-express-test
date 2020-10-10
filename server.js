@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser')
-const morgan = require('morgan')
+// const morgan = require('morgan')
 
 const PORT = process.env.PORT || 5000
 
@@ -11,7 +11,7 @@ const app = express();
 // CORS Middleware
 app.use(cors());
 // Logger Middleware
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 // Bodyparser Middleware
 app.use(bodyParser.json());
 
