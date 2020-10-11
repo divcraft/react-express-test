@@ -21,7 +21,7 @@ function App() {
         <h1>Hello world</h1>
         <div>{name} {surname}</div>
         <br />
-        <code>{fullYear}</code>
+        <code style={{ color: 'gray' }}>{fullYear}</code>
       </header>
     </div>
   );
