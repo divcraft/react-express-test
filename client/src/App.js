@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const [data, setData] = useState({})
-  const fullYear = new Date().getFullYear()
+  const date = new Date()
   useEffect(() => {
     fetch('/api')
       .then(response => response.json())
@@ -21,7 +21,7 @@ function App() {
         <h1>Hello world</h1>
         <div>{name} {surname}</div>
         <br />
-        <code style={{ color: 'gray' }}>{fullYear}</code>
+        <code style={{ color: 'gray' }}>{date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()}</code>
       </header>
     </div>
   );
